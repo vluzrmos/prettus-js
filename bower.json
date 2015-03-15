@@ -1,0 +1,23 @@
+{
+  "name": "prettus-js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/vluzrmos/prettus-js",
+  "authors": [
+    "Vluzrmos <vluzrmos@gmail.com>"
+  ],
+  "description": "A jQuery Ajax handle to Laravel Prettus/Repository.",
+  "main": "prettus.js",
+  "keywords": [
+    "Laravel",
+    "Ajax",
+    "Repository"
+  ],
+  "license": "DBAD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
