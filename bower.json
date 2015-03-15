@@ -5,6 +5,9 @@
   "authors": [
     "Vluzrmos <vluzrmos@gmail.com>"
   ],
+  "dependencies":{
+    "jquery":">=1.5"
+  },
   "description": "A jQuery Ajax handle to Laravel Prettus/Repository.",
   "main": "prettus.js",
   "keywords": [
