@@ -30,11 +30,17 @@ Prettus.search('/users')
 
 ## Configuration
 ```javascript
+// Same of Prettus/Repository package configuration
 Prettus.params ={
 	'search':'s',
 	'searchFields':'sf',
 	'orderBy':'o',
 	'sortedBy': 'sb',
 	'filter':'f'
+};
+
+// Same configuration of jQuery.ajax
+Prettus.defaultAjaxOptions = {
+  dataType:"json"
 };
 ```
