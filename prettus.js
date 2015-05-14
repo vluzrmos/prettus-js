@@ -1,6 +1,11 @@
-(function($){
+;(function($){
+	'use strict';
+
 	var Prettus = {};
 	
+	/**
+	 * Default params, same of Prettus Repository
+	 */
 	Prettus.params = {
 		'search':'search',
 		'searchFields':'searchFields',
@@ -9,14 +14,18 @@
 		'filter':'filter'
 	};
 	
+	/**
+	 * Default ajax options
+	 */
 	Prettus.defaultAjaxOptions = {
-		dataType:"json"
+		dataType:'json'
 	};
 	
+
 	var helpers = {};
 	
 	/**
-	 * Performs a join in value is array with a giving separator or returns value with is not array.
+	 * Performs a join in value if it is an array with a giving separator or returns value with is not array.
 	 */
 	helpers.join = function (value, sep){
 		if(value instanceof Array){
@@ -31,7 +40,7 @@
 	 * Encode pairs of key value to a component URL
 	 */ 
 	helpers.encodeKeyValue = function(key, value, sep){
-		return key+"="+encodeURIComponent(helpers.join(value, sep));
+		return key+'='+encodeURIComponent(helpers.join(value, sep));
 	}
 	
 	/**
@@ -45,11 +54,11 @@
 		}
 		
 		if (prettusOptions.searchFields != undefined){
-			urlComponents.push(helpers.encodeKeyValue(Prettus.params.searchFields, prettusOptions.searchFields, ";"));
+			urlComponents.push(helpers.encodeKeyValue(Prettus.params.searchFields, prettusOptions.searchFields, ';'));
 		}
 		
 		if(prettusOptions.filter != undefined){
-			urlComponents.push(helpers.encodeKeyValue(Prettus.params.filter, prettusOptions.filter, ";"));
+			urlComponents.push(helpers.encodeKeyValue(Prettus.params.filter, prettusOptions.filter, ';'));
 		}
 		
 		if(prettusOptions.orderBy != undefined){
@@ -60,7 +69,7 @@
 			urlComponents.push(helpers.encodeKeyValue(Prettus.params.sortedBy,prettusOptions.sortedBy));
 		}
 		
-		return url+"?"+urlComponents.join("&");
+		return url+'?'+urlComponents.join('&');
 	};
 	
 	/**
@@ -82,4 +91,5 @@
 	};
 
 	return (window.Prettus = Prettus);
-})($);
+	
+})(jQuery);

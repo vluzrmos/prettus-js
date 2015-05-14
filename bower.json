@@ -1,9 +1,9 @@
 {
   "name": "prettus-js",
-  "version": "0.0.0",
+  "version": "v0.1.0",
   "homepage": "https://github.com/vluzrmos/prettus-js",
   "authors": [
-    "Vluzrmos <vluzrmos@gmail.com>"
+    "Vagner do Carmo <vluzrmos@gmail.com>"
   ],
   "dependencies":{
     "jquery":">=1.5"
